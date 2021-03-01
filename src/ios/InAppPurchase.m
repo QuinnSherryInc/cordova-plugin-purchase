@@ -323,7 +323,7 @@ static NSString *priceLocaleCurrencyCode(NSLocale *priceLocale) {
 -(void) presentCodeRedemptionSheet: (CDVInvokedUrlCommand*)command {
 #if TARGET_OS_IPHONE
     if (@available(iOS 14.0, *)) {
-        [[SKPaymentQueue defaultQueue] presentCodeRedemptionSheet];
+        //[[SKPaymentQueue defaultQueue] presentCodeRedemptionSheet];
     }
 #endif
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"presentCodeRedemptionSheet"];
